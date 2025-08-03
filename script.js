@@ -1,102 +1,53 @@
 function checkAnswers() {
     let totalMarks = 0;
-
-    // Get Student's Name
-    const studentName = document.getElementById("studentName").value;
-
-    // Display Student's Name
-    document.getElementById("displayName").innerText = studentName
-        ? `Student Name: ${studentName}`
-        : "Student Name: Not Provided";
-
-    // Question 1: Regression (Predicting the price of a car)
-    const q1_price = document.querySelectorAll('input[type="checkbox"]')[0].checked;
-    const q1_spam = document.querySelectorAll('input[type="checkbox"]')[1].checked;
-    if (q1_spam && !q1_price) totalMarks += 10;
-
-    // Question 2: Classification (Dog or not)
-    if (document.getElementById("question2").value === "Weather forecast") totalMarks += 10;
-
-    // Question 3: Image resolution
-    const q3 = document.querySelector('input[name="workloadAI"]:checked');
-    if (q3 && q3.value === "Regression") totalMarks += 10;
-
-    // Question 4: RGB
-    const q4 = document.querySelector('input[name="train"]:checked');
-    if (q4 && q4.value === "feature") totalMarks += 10;
-
-    // Question 5: Color range
-    if (document.getElementById("question5").value === "Regression") totalMarks += 10;
-
-    // Question 6: Supervised learning types
-    if (document.getElementById("typeRegression").checked) totalMarks += 10;
-    if (document.getElementById("typeunsupervisedlearning").checked) totalMarks += 10;
-
-    // Question 7: Computer Vision task
-    if (document.getElementById("question7").value === "label") totalMarks += 10;
-
-    // Question 8: Image segmentation
-    if (document.getElementById("question8").value === "labl") totalMarks += 10;
-
-    // Question 9: Clustering
-    const q9 = document.querySelector('input[name="AI"]:checked');
-    if (q9 && q9.value === "human") totalMarks += 10;
-
-    // Question 10: Accuracy from image
-    const q10 = document.querySelector('input[name="image"]:checked');
-    if (q10 && q10.value === "stylr") totalMarks += 5;
-
-    // Question 11: Color range
-    if (document.getElementById("question11").value === "Object detection") totalMarks += 5;
- // question 12
-    const q12 = document.querySelector('input[name="ty"]:checked');
-    if (q12 && q12.value === "dataset") totalMarks += 5;
-    // QUESTION 13
-    const q13 = document.querySelector('input[name="tiy"]:checked');
-    if (q13 && q13.value === "dataset") totalMarks += 5;
-    // Question 14: Color range
-    if (document.getElementById("question14").value === "Instance segmentation only") totalMarks += 5;
-    // Question 15: Color range
-    if (document.getElementById("question15").value === "Object detection") totalMarks += 5;
-    // question 16
-    const q16 = document.querySelector('input[name="tiye"]:checked');
-    if (q16 && q16.value === "label") totalMarks += 5;
-    // Question 17: Color range
-    if (document.getElementById("question17").value === "Instance segmentation only") totalMarks += 5;
-    // Question 18: Color range
-    if (document.getElementById("question18").value === "Instance segmentation only") totalMarks += 5;
-    // question 19
-    const q19 = document.querySelector('input[name="tiyer"]:checked');
-    if (q19 && q19.value === "feature") totalMarks += 5;
-     // question 20
-    const q20 = document.querySelector('input[name="tiyerm"]:checked');
-    if (q20 && q20.value === "feature") totalMarks += 5;
-    // Question 21: Color range
-    if (document.getElementById("question21").value === "Object detection") totalMarks += 5;
-    // Question 22: Color range
-    if (document.getElementById("question22").value === "Instance segmentation only") totalMarks += 5;
-     // Question 23: Color range
-    if (document.getElementById("question23").value === "Instance segmentation only") totalMarks += 5;
-// question 24
-    const q24 = document.querySelector('input[name="tiyermt"]:checked');
-    if (q24 && q24.value === "dataset") totalMarks += 5;
-// question 25
-    const q25 = document.querySelector('input[name="tiyermti"]:checked');
-    if (q25 && q25.value === "feature") totalMarks += 5;
-// question 26
-    const q26 = document.querySelector('input[name="tiyermtie"]:checked');
-    if (q26 && q26.value === "label") totalMarks += 5;
-
- // Question 27: Color range
-    if (document.getElementById("question27").value === "Object detection") totalMarks += 5;
-// Question 28: Color range
-    if (document.getElementById("question28").value === "Image classification") totalMarks += 5;
-// Question 29: Color range
-    if (document.getElementById("question29").value === "Instance segmentation only") totalMarks += 5;
-// question 30
-    const q30 = document.querySelector('input[name="tiyermtien"]:checked');
-    if (q30 && q30.value === "dataset") totalMarks += 5;
-    // Redirect to results page
+    const studentName = document.getElementById("studentName")?.value || "";
+    document.getElementById("displayName").innerText = studentName ? `Student Name: ${studentName}` : "Student Name: Not Provided";
+    if (document.getElementById("q1_0")?.checked) totalMarks += 5;
+    if (document.getElementById("q2")?.value === "Spam or Not Spam") totalMarks += 5;
+    const q3 = document.querySelector('input[name="q3"]:checked');
+    if (q3 && q3.value === "Object detection with bounding boxes") totalMarks += 5;
+    const q4 = document.querySelector('input[name="q4"]:checked');
+    if (q4 && q4.value === "Regression") totalMarks += 5;
+    if (document.getElementById("q5")?.value === "Transparency") totalMarks += 5;
+    const q6 = document.querySelector('input[name="q6"]:checked');
+    if (q6 && q6.value === "Inclusiveness") totalMarks += 5;
+    if (document.getElementById("q7")?.value === "OCR") totalMarks += 5;
+    if (document.getElementById("q8")?.value === "Face recognition") totalMarks += 5;
+    const q9 = document.querySelector('input[name="q9"]:checked');
+    if (q9 && q9.value === "Regression") totalMarks += 5;
+    const q10 = document.querySelector('input[name="q10"]:checked');
+    if (q10 && q10.value === "Gaze estimation") totalMarks += 5;
+    if (document.getElementById("q11")?.value === "Privacy and Security") totalMarks += 5;
+    const q12 = document.querySelector('input[name="q12"]:checked');
+    if (q12 && q12.value === "French detected with 91% certainty") totalMarks += 5;
+    const q13 = document.querySelector('input[name="q13"]:checked');
+    if (q13 && q13.value === "Stemming") totalMarks += 5;
+    const q14 = document.querySelector('input[name="q14"]:checked');
+    if (q14 && q14.value === "Stopword removal") totalMarks += 5;
+    const q15 = document.querySelector('input[name="q15"]:checked');
+    if (q15 && q15.value === "Vectorization") totalMarks += 5;
+    const q16 = document.querySelector('input[name="q16"]:checked');
+    if (q16 && q16.value === "3") totalMarks += 5;
+    if (document.getElementById("q17")?.value === "Key phrase extraction") totalMarks += 5;
+    if (document.getElementById("q18")?.value === "Generative AI") totalMarks += 5;
+    const q19 = document.querySelector('input[name="q19"]:checked');
+    if (q19 && q19.value === "Intent detection") totalMarks += 5;
+    if (document.getElementById("q20")?.value === "6 correct positive predictions") totalMarks += 10;
+    if (document.getElementById("q21")?.value === "Fine-tuning") totalMarks += 5;
+    const q22 = document.querySelector('input[name="q22"]:checked');
+    if (q22 && q22.value === "Equal performance across user groups") totalMarks += 10;
+    if (document.getElementById("q23")?.value === "Highlights edges") totalMarks += 10;
+    if (document.getElementById("q24")?.value === "Bags of Words") totalMarks += 10;
+    if (document.getElementById("q25")?.value === "Language detection") totalMarks += 10;
+    const q26 = document.querySelector('input[name="q26"]:checked');
+    if (q26 && q26.value === "Logistic regression") totalMarks += 10;
+    const q27 = document.querySelector('input[name="q27"]:checked');
+    if (q27 && q27.value === "Image classification") totalMarks += 10;
+    if (document.getElementById("q28")?.value === "Both") totalMarks += 10;
+    const q29 = document.querySelector('input[name="q29"]:checked');
+    if (q29 && q29.value === "Intent detection") totalMarks += 10;
+    const q30 = document.querySelector('input[name="q30"]:checked');
+    if (q30 && q30.value === "Speech recognition") totalMarks += 10;
     const resultURL = `result.html?name=${encodeURIComponent(studentName)}&marks=${totalMarks}`;
     window.location.href = resultURL;
 }
