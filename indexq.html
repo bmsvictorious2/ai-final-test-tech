@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech skill final test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images (1).png">
+</head>
+<body style="background-image: url(images\ \(16\).jpeg);"></body>
+<div class="container">
+        <div class="header">
+            <img src="images (1).png" height="200px" width="200px" alt="">
+            <h1>Tech Skill Vocational Institute</h1>
+            
+          </div>
+        <h1>Final Test</h1>
+        <div class="name-section">
+            <div id="timer" style="font-size: 24px; font-weight: bold; color: purple;">Time Remaining: 01:30:00</div>
+            <label for="studentName"><span style="color: rgb(19, 94, 9); font-weight: bolder;">Enter your name:</span></label>
+            <input type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Display Student's Name -->
+        <p id="displayName"></p>
+<div class="question">
+<p>1. You're given a dataset of user comments without label. What method fits best?</p>
+<input type="checkbox" id="q1_0" value="Supervised learning"><label for="q1_0">Unsupervised learning</label>
+<input type="checkbox" id="q1_1" value="Unsupervised learning"><label for="q1_1">Supervised learning</label>
+</div>
+<div class="question">
+<p>2. What would be the label in a spam detection system?</p>
+<select id="q2">
+<option value="">--Select--</option>
+<option value="Number of characters">Number of characters</option>
+<option value="Sender email">Sender email</option>
+<option value="Spam or Not Spam">Spam or Not Spam</option>
+<option value="Time sent">Time sent</option>
+</select>
+</div>
+<div class="question">
+<p>3. Which task involves identifying where objects are in an image?</p>
+<input type="radio" name="q3" id="q3_0" value="Whole image labeling"><label for="q3_0">Whole image labeling</label>
+<input type="radio" name="q3" id="q3_1" value="Pixel-level classification"><label for="q3_1">Pixel-level classification</label>
+<input type="radio" name="q3" id="q3_2" value="Object detection with bounding boxes"><label for="q3_2">Object detection with bounding boxes</label>
+</div>
+<div class="question">
+<p>4. What method predicts future stock prices based on historical trends?</p>
+<input type="radio" name="q4" id="q4_0" value="Classification"><label for="q4_0">Classification</label>
+<input type="radio" name="q4" id="q4_1" value="Clustering"><label for="q4_1">Clustering</label>
+<input type="radio" name="q4" id="q4_2" value="Regression"><label for="q4_2">Regression</label>
+</div>
+<div class="question">
+<p>5. Which principle of AI helps explain why a decision was made?</p>
+<select id="q5">
+<option value="">--Select--</option>
+<option value="Privacy">Privacy</option>
+<option value="Transparency">Transparency</option>
+<option value="Fairness">Fairness</option>
+</select>
+</div>
+<div class="question">
+<p>6. Designing AI tools that can be used by people with disabilities represents:</p>
+<input type="radio" name="q6" id="q6_0" value="Exclusiveness"><label for="q6_0">Exclusiveness</label>
+<input type="radio" name="q6" id="q6_1" value="Inclusiveness"><label for="q6_1">Inclusiveness</label>
+<input type="radio" name="q6" id="q6_2" value="Indifference"><label for="q6_2">Indifference</label>
+</div>
+<div class="question">
+<p>7. Detecting printed text from scanned receipts uses which technique?</p>
+<select id="q7">
+<option value="">--Select--</option>
+<option value="Face recognition">Face recognition</option>
+<option value="YOLO">YOLO</option>
+<option value="OCR">OCR</option>
+</select>
+</div>
+<div class="question">
+<p>8. Unlocking phones using face patterns involves:</p>
+<select id="q8">
+<option value="">--Select--</option>
+<option value="Face recognition">Face recognition</option>
+<option value="Voice command">Voice command</option>
+<option value="Semantic segmentation">Semantic segmentation</option>
+<option value="Heatmap detection">Heatmap detection</option>
+</select>
+</div>
+<div class="question">
+<p>9. An app estimates rent based on square footage and neighborhood. Which method is applied?</p>
+<input type="radio" name="q9" id="q9_0" value="Classification"><label for="q9_0">Classification</label>
+<input type="radio" name="q9" id="q9_1" value="Regression"><label for="q9_1">Regression</label>
+<input type="radio" name="q9" id="q9_2" value="Clustering"><label for="q9_2">Clustering</label>
+</div>
+<div class="question">
+<p>10.  <img src="image.png" alt="" width="150px" height="100px"> 
+identify false negative?</p>
+<input type="radio" name="q10" id="q10_0" value="Face recognition"><label for="q10_0">3</label>
+<input type="radio" name="q10" id="q10_1" value="Sentiment detection"><label for="q10_1">5</label>
+<input type="radio" name="q10" id="q10_2" value="Gaze estimation"><label for="q10_2">7</label>
+</div>
+<div class="question">
+<p>11. Encrypting user data in AI systems supports what principle?</p>
+<select id="q11">
+<option value="">--Select--</option>
+<option value="Reliability">Reliability</option>
+<option value="Privacy and Security">Privacy and Security</option>
+<option value="Bias avoidance">Bias avoidance</option>
+</select>
+</div>
+<div class="question">
+<p>12. If a model returns {'lang': 'fr', 'confidence': 0.91}, what does that imply?</p>
+<input type="radio" name="q12" id="q12_0" value="French detected with 91% certainty"><label for="q12_0">French detected with 91% certainty</label>
+<input type="radio" name="q12" id="q12_1" value="Arabic detected"><label for="q12_1">Arabic detected</label>
+<input type="radio" name="q12" id="q12_2" value="Uncertain language"><label for="q12_2">Uncertain language</label>
+</div>
+<div class="question">
+<p>13. Converting words like 'learning', 'learned', 'learner' to 'learn' is called:</p>
+<input type="radio" name="q13" id="q13_0" value="Vectorization"><label for="q13_0">Vectorization</label>
+<input type="radio" name="q13" id="q13_1" value="Stemming"><label for="q13_1">Stemming</label>
+<input type="radio" name="q13" id="q13_2" value="Noise filtering"><label for="q13_2">Noise filtering</label>
+</div>
+<div class="question">
+<p>14. Removing words like 'is', 'the', 'an' is part of:</p>
+<input type="radio" name="q14" id="q14_0" value="Stemming"><label for="q14_0">Stemming</label>
+<input type="radio" name="q14" id="q14_1" value="Stopword removal"><label for="q14_1">Stopword removal</label>
+<input type="radio" name="q14" id="q14_2" value="Parsing"><label for="q14_2">Parsing</label>
+</div>
+<div class="question">
+<p>15. Transforming sentences into numerical format for ML models is called:</p>
+<input type="radio" name="q15" id="q15_0" value="OCR"><label for="q15_0">OCR</label>
+<input type="radio" name="q15" id="q15_1" value="Vectorization"><label for="q15_1">Vectorization</label>
+<input type="radio" name="q15" id="q15_2" value="Translation"><label for="q15_2">Translation</label>
+</div>
+<div class="question">
+<p>16. How many tokens in the phrase 'AI is amazing'?</p>
+<input type="radio" name="q16" id="q16_0" value="2"><label for="q16_0">2</label>
+<input type="radio" name="q16" id="q16_1" value="3"><label for="q16_1">3</label>
+<input type="radio" name="q16" id="q16_2" value="4"><label for="q16_2">4</label>
+</div>
+<div class="question">
+<p>17. What process identifies the key concepts in a paragraph?</p>
+<select id="q17">
+<option value="">--Select--</option>
+<option value="Word embedding">Word embedding</option>
+<option value="Key phrase extraction">Key phrase extraction</option>
+<option value="Classification">Classification</option>
+</select>
+</div>
+<div class="question">
+<p>18. Which technique is commonly used for generating new songs from trained data?</p>
+<select id="q18">
+<option value="">--Select--</option>
+<option value="Fine-tuning">Fine-tuning</option>
+<option value="Generative AI">Generative AI</option>
+<option value="Data mining">Data mining</option>
+</select>
+</div>
+<div class="question">
+<p>19. Which technique helps AI models understand user goals in chatbots?</p>
+<input type="radio" name="q19" id="q19_0" value="Intent detection"><label for="q19_0">Intent detection</label>
+<input type="radio" name="q19" id="q19_1" value="OCR"><label for="q19_1">OCR</label>
+<input type="radio" name="q19" id="q19_2" value="Classification"><label for="q19_2">Classification</label>
+</div>
+<div class="question">
+<p>20. If a confusion matrix shows 6 true positives, what does that mean?</p>
+<select id="q20">
+<option value="">--Select--</option>
+<option value="6 correct positive predictions">6 correct positive predictions</option>
+<option value="6 wrong negatives">6 wrong negatives</option>
+<option value="6 errors">6 errors</option>
+</select>
+</div>
+<div class="question">
+<p>21. Which term means adjusting a pre-trained model for a specific use?</p>
+<select id="q21">
+<option value="">--Select--</option>
+<option value="Fine-tuning">Fine-tuning</option>
+<option value="Data labeling">Data labeling</option>
+<option value="Resizing">Resizing</option>
+</select>
+</div>
+<div class="question">
+<p>22. What describes fairness in AI?</p>
+<input type="radio" name="q22" id="q22_0" value="Avoiding all errors"><label for="q22_0">Avoiding all errors</label>
+<input type="radio" name="q22" id="q22_1" value="Equal performance across user groups"><label for="q22_1">Equal performance across user groups</label>
+<input type="radio" name="q22" id="q22_2" value="Explaining decisions"><label for="q22_2">Explaining decisions</label>
+</div>
+<div class="question">
+<p>23. How does Laplacian filtering help in computer vision?</p>
+<select id="q23">
+<option value="">--Select--</option>
+<option value="Reduces noise">Reduces noise</option>
+<option value="Highlights edges">Highlights edges</option>
+<option value="Changes resolution">Changes resolution</option>
+</select>
+</div>
+<div class="question">
+<p>24. Which technique is used to count how often words appear?</p>
+<select id="q24">
+<option value="">--Select--</option>
+<option value="Bags of Words">Bags of Words</option>
+<option value="Stemming">Stemming</option>
+<option value="Entity Recognition">Entity Recognition</option>
+</select>
+</div>
+<div class="question">
+<p>25. A model that scores how likely a sentence is in a given language is doing:</p>
+<select id="q25">
+<option value="">--Select--</option>
+<option value="Language detection">Language detection</option>
+<option value="Image labeling">Image labeling</option>
+<option value="Intent recognition">Intent recognition</option>
+</select>
+</div>
+<div class="question">
+<p>26. Which of the following is a classification algorithm?</p>
+<input type="radio" name="q26" id="q26_0" value="K-means"><label for="q26_0">K-means</label>
+<input type="radio" name="q26" id="q26_1" value="Logistic regression"><label for="q26_1">Logistic regression</label>
+<input type="radio" name="q26" id="q26_2" value="TF-IDF"><label for="q26_2">TF-IDF</label>
+</div>
+<div class="question">
+<p>27. CNN is best known for tasks in:</p>
+<input type="radio" name="q27" id="q27_0" value="Text analysis"><label for="q27_0">Text analysis</label>
+<input type="radio" name="q27" id="q27_1" value="Image classification"><label for="q27_1">Image classification</label>
+<input type="radio" name="q27" id="q27_2" value="Language modeling"><label for="q27_2">Language modeling</label>
+</div>
+<div class="question">
+<p>28.  What is the goal of sentiment analysis?</p>
+<select id="q28">
+<option value="">--Select--</option>
+<option value="Confusion matrix">Translate text into another language</option>
+<option value="Accuracy">Identify the grammatical structure of a sentence</option>
+<option value="Both">Determine the emotional tone or opinion in a text</option>
+</select>
+</div>
+<div class="question">
+<p>29. In clustering, what is a cluster centroid?</p>
+<input type="radio" name="q29" id="q29_0" value="Intent detection"><label for="q29_0">The center of a group of similar data points</label>
+<input type="radio" name="q29" id="q29_1" value="Vectorization"><label for="q29_1">A decision point</label>
+<input type="radio" name="q29" id="q29_2" value="Stemming"><label for="q29_2">A label for the data</label>
+</div>
+<div class="question">
+<p>30. Which audio-based tech converts voice to written text?</p>
+<input type="radio" name="q30" id="q30_0" value="Speech recognition"><label for="q30_0">Speech recognition</label>
+<input type="radio" name="q30" id="q30_1" value="Text-to-speech"><label for="q30_1">Text-to-speech</label>
+<input type="radio" name="q30" id="q30_2" value="Keyword extraction"><label for="q30_2">Keyword extraction</label>
+</div>
+<br><br>
+
+        
+        <button onclick="checkAnswers()">submit</button>
+        <p id="result"></p>
+</div>
+ <script src="answer.js"></script>
+     <script>
+         let timeLeft = 90 * 60; // 1 hour 30 minutes in seconds
+
+// Timer Function
+function updateTimer() {
+    const timerElement = document.getElementById("timer");
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    timerElement.textContent = `Time Remaining: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    
+    if (timeLeft <= 0) {
+        submitForm(); // Automatically submit the form when time runs out
+    } else {
+        timeLeft--;
+        setTimeout(updateTimer, 1000);
+    }
+}
+  // Start Timer
+  updateTimer();
+
+// Handle Submit Button Click
+document.getElementById('testForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
+    submitForm();
+});
+
+    </script>
+</body>
+</html>
